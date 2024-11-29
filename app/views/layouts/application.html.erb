@@ -11,6 +11,21 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
+      <div class="container-fluid">
+        <%= image_tag "pop_corn_logo.png", :style => "width: 40px"%>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto">
+              <li class="nav-item active">
+                <%= link_to "Home", lists_path, class: "nav-link" %>
+              </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container mb-3">
+      <%= yield %>
+    </div>
   </body>
 </html>
