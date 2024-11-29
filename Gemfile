@@ -38,6 +38,10 @@ gem "sassc-rails"
 
 gem "faker"
 
+gem "cloudinary"
+
+gem "dotenv-rails"
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", ">= 4.0.1"
 
@@ -59,8 +63,6 @@ gem "bootsnap", require: false
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri windows ]
-
-  gem "dotenv-rails"
 end
 
 group :development do
